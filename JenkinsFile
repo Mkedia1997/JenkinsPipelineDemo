@@ -4,14 +4,11 @@ pipeline{
 			stage('Maven Compile'){
 				steps{
 				echo 'Compile Stage'
-				//bat label: 'Compiling' 
-				sh 'mvn compile'
 				}
 			}
 			stage('Maven Test'){
 				steps{
 				echo 'Test Stage'
-				//bat label: 'Test'
 				}
 			}
 			
