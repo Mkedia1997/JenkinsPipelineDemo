@@ -3,8 +3,7 @@ pipeline{
 	stages{
 			stage('Maven Compile'){
 				echo 'Compile Stage'
-				def mvnHome = tool name: 'maven-3', type: 'maven'
-				sh "${mvnHome}bin/mvn compile"
+				bat 'mvn compile'
 			}
 			stage('Maven Test'){
 				steps{
