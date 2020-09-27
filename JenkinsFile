@@ -8,7 +8,6 @@ pipeline{
 				}
 			}
 			stage('Maven Test'){
-				tool{maven 'M2_Home'}
 				steps{
 				echo 'Test Stage'
 				}
