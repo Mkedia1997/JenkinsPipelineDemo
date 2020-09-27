@@ -2,12 +2,10 @@ pipeline{
 	agent any
 	stages{
 			stage('Maven-Compile'){
-				bat 'mvn compile'
+				
 			}
 			stage('Maven Test'){
-				steps{
-				echo 'Test Stage'
-				}
+				
 			}
 			
 			
