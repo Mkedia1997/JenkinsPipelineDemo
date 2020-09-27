@@ -2,10 +2,10 @@ pipeline{
 	agent any
 	stages{
 			stage('Maven Compile'){
-				steps{
+				def mvnHome = tool name: 'maven-3', type: 'maven'
+				def mvnCmd = "${mvnHome}/bin/mvn"
 				echo 'Compile Stage'
-				sh 'mvn clean package'
-				}
+				sh "${mvnCmd} compile"
 			}
 			stage('Maven Test'){
 				steps{
