@@ -4,4 +4,16 @@
   <artifactId>JenkinsPipelineDemo</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>JenkinsPipelineDemo</name>
+  <properties>
+    <maven.compiler.source>1.6</maven.compiler.source>
+    <maven.compiler.target>1.6</maven.compiler.target>
+  </properties>
+  <dependcies>
+  <dependency>
+    <groupId>junit</groupId>
+    <artifactId>junit</artifactId>
+    <version>4.13</version>
+    <scope>test</scope>
+</dependency>
+   </dependcies>
 </project>
