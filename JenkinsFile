@@ -1,16 +1,12 @@
-pipeline{
-	agent any
-	stages{
+node {
 			stage('Maven-Compile'){
+				echo 'Test Stage'
 				
 			}
 			stage('Maven Test'){
+			bat 'mvn compile'
 				
 			}
-			
-			
-	}
-	
 
 
-}
+}	
