@@ -4,9 +4,11 @@ pipeline{
 			stage('Maven Compile'){
 				steps{
 				echo 'Compile Stage'
+				sh 'mvn clean package'
 				}
 			}
 			stage('Maven Test'){
+				tool{maven 'M2_Home'}
 				steps{
 				echo 'Test Stage'
 				}
