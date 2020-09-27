@@ -4,7 +4,7 @@ node {
 				
 			}
 			stage('Maven Test'){
-			bat 'mvn compile'
+			bat 'mvn test'
 				
 			}
 
